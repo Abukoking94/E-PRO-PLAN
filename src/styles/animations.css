@@ -1,0 +1,175 @@
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.52;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-progress {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: var(--progress-width, 100%);
+  }
+}
+
+@keyframes grid-drift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(36px, 36px, 0);
+  }
+}
+
+@keyframes glow-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translate3d(12px, -18px, 0) scale(1.05);
+    opacity: 0.46;
+  }
+}
+
+@keyframes aurora-sway {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translate3d(2%, -4%, 0) rotate(8deg) scale(1.08);
+    opacity: 0.5;
+  }
+}
+
+@keyframes beam-rise {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 0.18;
+  }
+
+  50% {
+    transform: translateY(-4%) scaleY(1.08);
+    opacity: 0.34;
+  }
+}
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slow-spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes radar-spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.14;
+  }
+
+  45% {
+    opacity: 0.22;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.14;
+  }
+}
+
+.animate-float-soft {
+  animation: float-soft 6s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2.8s ease-in-out infinite;
+}
+
+.animate-grid-drift {
+  animation: grid-drift 20s linear infinite;
+}
+
+.animate-glow-drift {
+  animation: glow-drift 12s ease-in-out infinite;
+}
+
+.animate-glow-drift-delayed {
+  animation: glow-drift 16s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.animate-aurora-sway {
+  animation: aurora-sway 18s ease-in-out infinite;
+}
+
+.animate-aurora-sway-delayed {
+  animation: aurora-sway 24s ease-in-out infinite reverse;
+}
+
+.animate-aurora-sway-soft {
+  animation: aurora-sway 20s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-beam-rise {
+  animation: beam-rise 12s ease-in-out infinite;
+}
+
+.animate-beam-rise-delayed {
+  animation: beam-rise 15s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+.animate-spin-slow {
+  animation: slow-spin 32s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: slow-spin-reverse 38s linear infinite;
+}
+
+.animate-radar-spin {
+  animation: radar-spin 16s linear infinite;
+}
+
+.animate-radar-spin-delayed {
+  animation: radar-spin 20s linear infinite reverse;
+}

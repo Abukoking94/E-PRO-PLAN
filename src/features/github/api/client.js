@@ -1,0 +1,1 @@
+export { fetchGitHubJson } from './githubClient';
