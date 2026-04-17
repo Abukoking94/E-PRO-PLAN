@@ -1,6 +1,6 @@
 {
-  "name": "project-management-platform",
-  "description": "OrbitOps is a futuristic frontend-only project management platform concept built with React, Tailwind CSS, Vite, and live GitHub delivery signals.",
+  "name": "e-pro-plan",
+  "description": "E-PRO PLAN is a futuristic frontend-only project management platform concept built with React, Tailwind CSS, Vite, and live GitHub delivery signals.",
   "private": true,
   "version": "0.0.0",
   "type": "module",

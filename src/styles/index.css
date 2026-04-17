@@ -58,6 +58,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -69,6 +70,7 @@ body {
     radial-gradient(circle at 60% 62%, rgba(45, 212, 191, 0.09), transparent 30%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 38%, var(--bg) 100%);
   color: var(--body-text);
+  overflow-x: hidden;
   transition:
     background 220ms ease,
     color 220ms ease;
@@ -76,6 +78,7 @@ body {
 
 #root {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 a {
@@ -439,10 +442,12 @@ select {
 }
 
 .hero-orb {
-  position: absolute;
+  position: fixed;
   border-radius: 9999px;
   filter: blur(80px);
   opacity: 0.34;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-orb-cyan {
@@ -456,7 +461,7 @@ select {
 .hero-orb-blue {
   width: 20rem;
   height: 20rem;
-  bottom: -2rem;
+  bottom: 8vh;
   left: 42%;
   background: rgba(96, 165, 250, 0.28);
 }

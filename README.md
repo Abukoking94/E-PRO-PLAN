@@ -1,6 +1,6 @@
-# OrbitOps
+# E-PRO PLAN
 
-OrbitOps is a futuristic frontend-only project management platform concept built with React, Vite, Tailwind CSS, Framer Motion, and live GitHub REST API data.
+E-PRO PLAN is a futuristic frontend-only project management platform concept built with React, Vite, Tailwind CSS, Framer Motion, and live GitHub REST API data.
 
 It is designed as a portfolio-grade landing experience that feels like real organizational software instead of a generic SaaS mockup. The project combines cinematic UI direction, reusable component architecture, and live delivery signals sourced from public GitHub repositories.
 
@@ -25,7 +25,7 @@ It is designed as a portfolio-grade landing experience that feels like real orga
 
 ## Live Data Source
 
-OrbitOps uses public GitHub REST endpoints for the live operational surfaces.
+E-PRO PLAN uses public GitHub REST endpoints for the live operational surfaces.
 
 Configured repo values live in `.env` and `.env.example`:
 
@@ -54,7 +54,7 @@ The project follows a fixed architecture with dedicated folders for:
 
 ## Sections
 
-OrbitOps includes a full landing-page flow with:
+E-PRO PLAN includes a full landing-page flow with:
 
 - Hero
 - Live Pulse
